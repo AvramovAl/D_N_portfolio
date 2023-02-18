@@ -15,52 +15,101 @@
   </head>
   <body>
     <header>
-      <nav class="site-nav">
-        <li class="nav-item"><a href="">Home</a></li>
-        <li class="nav-item"><a href="">About me</a></li>
-        <li class="nav-item"><a href="">Skills</a></li>
-        <li class="nav-item"><a href="">Portfolio</a></li>
-        <li class="nav-item"><a href="">Contacts</a></li>
-      </nav>
-      <h1 class="site-title">Denis Novik</h1>
-      <p>UX | UI designer 24 years old, Ukraine</p>
-      <div>
-        <picture>
-          <source srcset="" media="(min-width: 1200px)" />
-          <!-- <source
-                      srcset="
-                        ./images/card-mobile-1.jpg    1x,
-                        ./images/card-mobile-1@2x.jpg 2x
-                      "
-                      media="max-width: 767px"
-                    /> -->
-          <img
-            src="./images/card-mobile-1.jpg"
-            alt="Banking App Interface Concept"
-          />
-        </picture>
-      </div>
-      <div class="lang">
-        <a href="">UA</a>
-        <a href="">ENG</a>
+      <div class="container">
+        <nav class="site-nav">
+          <li class="nav-item"><a href="">Home</a></li>
+          <li class="nav-item"><a href="">About me</a></li>
+          <li class="nav-item"><a href="">Skills</a></li>
+          <li class="nav-item"><a href="">Portfolio</a></li>
+          <li class="nav-item"><a href="">Contacts</a></li>
+        </nav>
+        <h1 class="site-title">Denis Novik</h1>
+        <p>UX | UI designer 24 years old, Ukraine</p>
+        <div>
+          <picture>
+            <source
+              srcset="./image/hero_d.jpg 1x, ./image/hero_d@2x.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="./image/hero_m.jpg 1x, ./image/hero_m@2x.jpg 2x"
+              media="(max-width: 1199px)"
+            />
+            <img src="./image/hero_m.jpg" alt="Foto Denis Novik" />
+          </picture>
+        </div>
+        <div class="lang">
+          <a href="">UA</a>
+          <a href="">ENG</a>
+        </div>
       </div>
     </header>
     <main>
       <section>
-        <h2>About me</h2>
-        <p>
-          Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
-          and everything connected with it.
-        </p>
-        <p>
-          I'm studying at courses "Web and mobile design interfaces" in
-          IT-Academy.
-        </p>
-        <p>Ready to implement excellent projects with wonderful people.</p>
+        <div class="container">
+          <h2>About me</h2>
+          <p>
+            Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
+            and everything connected with it.
+          </p>
+          <p>
+            I'm studying at courses "Web and mobile design interfaces" in
+            IT-Academy.
+          </p>
+          <p>Ready to implement excellent projects with wonderful people.</p>
+        </div>
       </section>
       <section>
-        <h2>Skills</h2>
-        <p>I work in such programs as</p>
+        <div class="container">
+          <h2>Skills</h2>
+          <p>I work in such programs as</p>
+
+          <ul class="skills-set">
+            <li class="skills-item">
+              <svg class="skills-card">
+                <use href="./image/sprite.svg#icon-ps"></use>
+              </svg>
+              <p>Adobe Photoshop</p>
+            </li>
+            <li class="skills-item">
+              <svg class="skills-card">
+                <use href="./image/sprite.svg#icon-ai"></use>
+              </svg>
+              <p>Adobe Illustrator</p>
+            </li>
+            <li class="skills-item">
+              <svg class="skills-card">
+                <use href="./image/sprite.svg#icon-ae"></use>
+              </svg>
+              <p>Adobe After Effects</p>
+            </li>
+            <li class="skills-item">
+              <svg class="skills-card">
+                <use href="./image/sprite.svg#icon-figma"></use>
+              </svg>
+              <p>Figma</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2>Portfolio</h2>
+          <ul class="portfolio-set">
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link"></a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link"></a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link"></a>
+            </li>
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link"></a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
   </body>
