@@ -8,3 +8,35 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 125px;
+    padding-right: 125px;
+    min-width: 1200px;
+  }
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.23;
+  color: #000000;
+
+  text-align: center;
+}
+
+.section-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #000000;
+}

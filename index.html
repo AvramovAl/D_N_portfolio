@@ -23,9 +23,15 @@
           <li class="nav-item"><a href="">Portfolio</a></li>
           <li class="nav-item"><a href="">Contacts</a></li>
         </nav>
-        <h1 class="site-title">Denis Novik</h1>
-        <p>UX | UI designer 24 years old, Ukraine</p>
-        <div>
+        <div class="info">
+          <h1 class="site-ifo-title">Denis Novik</h1>
+          <p class="site-info-text">UX | UI designer 24 years old, Ukraine</p>
+        </div>
+        <div class="lang">
+          <a href="">UA</a>
+          <a href="">ENG</a>
+        </div>
+        <div class="site-promo">
           <picture>
             <source
               srcset="./image/hero_d.jpg 1x, ./image/hero_d@2x.jpg 2x"
@@ -38,53 +44,53 @@
             <img src="./image/hero_m.jpg" alt="Foto Denis Novik" />
           </picture>
         </div>
-        <div class="lang">
-          <a href="">UA</a>
-          <a href="">ENG</a>
-        </div>
       </div>
     </header>
     <main>
-      <section>
+      <!-- About -->
+      <section class="about">
         <div class="container">
-          <h2>About me</h2>
-          <p>
+          <h2 class="section-title">About me</h2>
+          <p class="section-text about-text">
             Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design
             and everything connected with it.
           </p>
-          <p>
+          <p class="section-text about-text">
             I'm studying at courses "Web and mobile design interfaces" in
             IT-Academy.
           </p>
-          <p>Ready to implement excellent projects with wonderful people.</p>
+          <p class="section-text about-text">
+            Ready to implement excellent projects with wonderful people.
+          </p>
         </div>
       </section>
+      <!-- Skils -->
       <section>
         <div class="container">
-          <h2>Skills</h2>
-          <p>I work in such programs as</p>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-text">I work in such programs as</p>
 
-          <ul class="skills-set">
+          <ul class="skills-card">
             <li class="skills-item">
-              <svg class="skills-card">
+              <svg class="skills-img">
                 <use href="./image/sprite.svg#icon-ps"></use>
               </svg>
               <p>Adobe Photoshop</p>
             </li>
             <li class="skills-item">
-              <svg class="skills-card">
+              <svg class="skills-img">
                 <use href="./image/sprite.svg#icon-ai"></use>
               </svg>
               <p>Adobe Illustrator</p>
             </li>
             <li class="skills-item">
-              <svg class="skills-card">
+              <svg class="skills-img">
                 <use href="./image/sprite.svg#icon-ae"></use>
               </svg>
               <p>Adobe After Effects</p>
             </li>
             <li class="skills-item">
-              <svg class="skills-card">
+              <svg class="skills-img">
                 <use href="./image/sprite.svg#icon-figma"></use>
               </svg>
               <p>Figma</p>
@@ -92,25 +98,122 @@
           </ul>
         </div>
       </section>
+      <!-- Portfolio -->
       <section>
         <div class="container">
-          <h2>Portfolio</h2>
+          <h2 class="section-title">Portfolio</h2>
           <ul class="portfolio-set">
             <li class="portfolio-item">
-              <a href="" class="portfolio-link"></a>
+              <picture>
+                <source
+                  srcset="
+                    ./image/portfolio_1_d.jpg    1x,
+                    ./image/portfolio_1_d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/portfolio_1_m.jpg    1x,
+                    ./image/portfolio_1_m@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <img
+                  src="./image/portfolio_1_m.jpg"
+                  alt="Online fashion store"
+                />
+              </picture>
+              <a href="" class="portfolio-link">
+                Online fashion store - Homepage
+              </a>
             </li>
             <li class="portfolio-item">
-              <a href="" class="portfolio-link"></a>
+              <picture>
+                <source
+                  srcset="
+                    ./image/portfolio_2_d.jpg    1x,
+                    ./image/portfolio_2_d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/portfolio_2_m.jpg    1x,
+                    ./image/portfolio_2_m@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <img src="./image/portfolio_2_m.jpg" alt="Reebok Store" />
+              </picture>
+              <a href="" class="portfolio-link">Reebok Store - Concept</a>
             </li>
             <li class="portfolio-item">
-              <a href="" class="portfolio-link"></a>
-            </li>
-            <li class="portfolio-item">
-              <a href="" class="portfolio-link"></a>
+              <picture>
+                <source
+                  srcset="
+                    ./image/portfolio_3_d.jpg    1x,
+                    ./image/portfolio_3_d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/portfolio_3_m.jpg    1x,
+                    ./image/portfolio_3_m@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <img src="./image/portfolio_3_m.jpg" alt="Braun Landing Page" />
+              </picture>
+              <a href="" class="portfolio-link">
+                Braun Landing Page - Concept
+              </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <h2 class="section-title">Contacts</h2>
+        <p class="section-text">
+          Want to know more or just chat? You are welcome!
+        </p>
+        <button type="button">Send message</button>
+        <ul class="social-set">
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg>
+                <use href="./image/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg>
+                <use href="./image/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg>
+                <use href="./image/sprite.svg#icon-be"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg>
+                <use href="./image/sprite.svg#icon-bascet"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <p>Like me on LinkedIn, Instagram, Behance, Dribble</p>
+      </div>
+    </footer>
   </body>
 </html>

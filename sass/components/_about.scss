@@ -1,0 +1,12 @@
+.about {
+  background-color: #f6f6f6;
+
+  & .container {
+    padding-top: 80px;
+    padding-bottom: 75px;
+  }
+}
+
+.about-text + .about-text {
+  margin-top: 50px;
+}

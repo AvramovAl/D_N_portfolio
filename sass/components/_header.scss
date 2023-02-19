@@ -1,0 +1,33 @@
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+
+  .lang {
+    display: none;
+  }
+}
+
+.site-ifo-title {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 1.23;
+  color: #000000;
+  max-width: 124px;
+
+  margin-top: 65px;
+}
+
+.site-info-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #090909;
+  width: 175px;
+
+  margin-top: 23px;
+}
+
+.site-promo {
+  margin-top: 37px;
+  margin-bottom: 83px;
+}
